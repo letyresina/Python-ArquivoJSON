@@ -1,0 +1,26 @@
+[
+    {
+        "codigo": 123,
+        "nome": "Paulo Vieira",
+        "idade": 30,
+        "altura": 1.8,
+        "notas": [
+            9,
+            7.5,
+            10,
+            8
+        ]
+    },
+    {
+        "codigo": 124,
+        "nome": "João Pedro",
+        "idade": 32,
+        "altura": 1.72,
+        "notas": [
+            9,
+            7.5,
+            10,
+            8
+        ]
+    }
+]
