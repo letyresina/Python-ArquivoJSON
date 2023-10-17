@@ -1,12 +1,3 @@
-{
-    "codigo": 123,
-    "nome": "Paulo Vieira",
-    "idade": 30,
-    "altura": 1.8,
-    "notas": [
-        9,
-        7.5,
-        10,
-        8
-    ]
-}
+[
+    "2101577;Amanda Mendes;4.7;4.5;4.1;4.2\n"
+]
