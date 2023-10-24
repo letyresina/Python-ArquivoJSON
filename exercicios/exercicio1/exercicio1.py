@@ -15,7 +15,7 @@ with open('exercicios/exercicio1/notas.csv', 'r', encoding='utf-8') as arquivo:
     for linha in arquivo:
         if cont > 1:
             lista = linha.split(';')
-            print(lista)
+            #print(lista)
             dicionario[lista[0]] = {"nome": lista[1], "notas": [lista[2], lista[3], lista[4], lista[5].replace('\n','')]}
         cont += 1
     with open('exercicios/exercicio1/dadosJSON.json', 'w') as arquivoJSON:
