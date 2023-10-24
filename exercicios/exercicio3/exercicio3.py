@@ -42,8 +42,31 @@ while True:
         time.sleep(1)
     if opcao == 3:
         # Editar um pet pré-existente no sistema
-        print("Em breve...")
+        with open ('exercicios/exercicio3/dadosPet.json', 'r', encoding='utf-8') as arquivo:
+            lista = json.load(arquivo)
+        nome = input("Qual nome do pet que deseja excluir? \n")
+        encontrado = False
+        for item in lista:
+            if item["nome"] == nome:
+                encontrado = True
+                print(f"O que você deseja editar para o {nome}?")
+                print("\n 1 - Nome; \n 2 - Tipo; \n 3 - Idade")
+                editaOpcao = int(input("Informe a opção desejada \n"))
+                if editaOpcao == 1:
+                    item["nome"] = input("Digite o novo nome: ")
+                elif editaOpcao == 2:
+                    item["tipo"] = input("Digite o novo tipo: ")
+                elif editaOpcao == 3:
+                    item["idade"] = input("Digite a nova idade: ")
+                else:
+                    print("Opção inválida.")
+        if not encontrado:
+            print(f"O nome {nome} não foi existe em nosso sistema!")
+
+        with open('exercicios/exercicio3/dadosPet.json', 'w', encoding='utf-8') as arquivoJSON:
+            json.dump(lista, arquivoJSON, indent=4, ensure_ascii=False)
         time.sleep(1)
+
     if opcao == 4:
         # Excluir um pet pré-existente no sistema
         with open ('exercicios/exercicio3/dadosPet.json', 'r', encoding='utf-8') as arquivo:

@@ -17,6 +17,6 @@
     {
         "tipo": "Cachorro",
         "nome": "Bebel",
-        "idade": 2
+        "idade": "10"
     }
 ]
