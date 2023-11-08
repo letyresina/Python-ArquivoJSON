@@ -44,7 +44,7 @@ while True:
         # Editar um pet pré-existente no sistema
         with open ('exercicios/exercicio3/dadosPet.json', 'r', encoding='utf-8') as arquivo:
             lista = json.load(arquivo)
-        nome = input("Qual nome do pet que deseja excluir? \n")
+        nome = input("Qual nome do pet que deseja editar? \n")
         encontrado = False
         for item in lista:
             if item["nome"] == nome:
